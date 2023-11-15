@@ -117,7 +117,7 @@ public class Factura {
         if(cliente instanceof ClienteEstudiante) {
             ClienteEstudiante estudiante = (ClienteEstudiante)cliente;
 
-            double descuentoSemestre = estudiante.getSemestre() * 0.012;
+            double descuentoSemestre = estudiante.getSemestre() * 0.0124499;
             descuento = precioTotal * descuentoSemestre;
         }
 
