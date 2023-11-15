@@ -22,4 +22,10 @@ public class ProductoPanaderia extends Producto {
     public double getImpuestoAdicional() {
         return impuestoAdicional;
     }
+
+
+    @Override
+    public double aplicarImpuesto(Producto producto) {
+        throw new UnsupportedOperationException("Unimplemented method 'aplicarImpuesto'");
+    }
 }

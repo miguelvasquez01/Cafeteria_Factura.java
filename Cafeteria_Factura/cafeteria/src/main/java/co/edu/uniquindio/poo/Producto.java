@@ -1,6 +1,6 @@
 package co.edu.uniquindio.poo;
 
-public class Producto {
+public abstract class Producto {
     
     private String nombre;
     private double valor;
@@ -18,4 +18,6 @@ public class Producto {
     public String getNombre() {
         return nombre;
     }
+
+    public abstract double aplicarImpuesto(Producto producto);
 }

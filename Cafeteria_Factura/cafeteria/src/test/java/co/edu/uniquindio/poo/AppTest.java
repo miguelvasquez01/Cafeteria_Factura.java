@@ -58,7 +58,7 @@ public class AppTest {
         Factura factura = new Factura(cliente2, productos);
 
 
-        assertEquals(2200, factura.calcularPrecioProducto(producto1));
+        assertEquals(2200, factura.calcularPrecioProducto2(producto1));
         assertEquals(590, factura.calcularPrecioProducto(producto2));//Panaderia con conservantes
         assertEquals(1250, factura.calcularPrecioProducto(producto3));
         assertEquals(1480, factura.calcularPrecioProducto(producto4));
@@ -78,7 +78,7 @@ public class AppTest {
 
 
         @Test
-    public void calcularPrecioProducto2() { //ClienteEstudiante
+    public void calcularPrecioProductoEstudiante() { //ClienteEstudiante
         LOG.info("Iniciado test calcularPrecioProducto2");
 
         var cliente = new ClienteEstudiante("93928103", "Jorge", "Pelaez", "jorge@gmail.com", 2);

@@ -17,6 +17,14 @@ public class Factura {
         this.listaProductos = listaProductos;
     }
 
+    public double calcularPrecioProducto2(Producto producto) {
+        double precio = 0;
+        
+            precio = producto.aplicarImpuesto(producto);
+        
+        return precio;
+    }
+
 
     public double calcularPrecioProducto(Producto producto) {
         double precio = producto.getValor(); // Precio base

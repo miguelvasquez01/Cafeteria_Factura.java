@@ -23,4 +23,9 @@ public class ProductoFruta extends Producto {
     public double getLibras() {
         return libras;
     }
+
+    @Override
+    public double aplicarImpuesto(Producto producto) {
+        throw new UnsupportedOperationException("Unimplemented method 'aplicarImpuesto'");
+    }
 }
